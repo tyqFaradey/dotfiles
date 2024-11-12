@@ -1,0 +1,86 @@
+* {
+    min-height: 0;
+    min-width: 0;
+    font-family: "jetbrains mono", "awesome";
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+  }
+
+  #workspaces {
+    border-color: transparent;
+  }
+  
+  #workspaces button {
+    min-height: 0;
+    min-width: 0;
+    padding: .3em 0.6em;
+    margin: 1px 1px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc2a2;
+  }
+  
+  #workspaces button:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: #dfe2da;
+  
+  }
+  
+  #workspaces button.active {
+    background: rgba(0, 0, 0, 0.1);
+    color: #dfe2da;
+  }
+  
+  #clock,
+  #pulseaudio,
+  #cpu,
+  #tray,
+  #memory,
+  #window,
+  #tray,
+  #battery,
+  #bluetooth,
+  #language {
+    min-height: 0;
+    min-width: 0;
+    padding: 0.3em 0.5em;
+    border-radius: 4px;
+    margin:3px 1.5px;
+    background-color: rgba(50, 48, 47, 0.01);
+    color: #ccc2a2;
+    
+  }
+
+
+  #bluetooth {
+    margin-left: 3px;
+  }
+
+  #language {
+    margin-right: 3px;
+  }
+
+  
+  window#waybar.empty #window {
+    background-color: transparent;
+  }
+  
+
+  tooltip * {
+    background:	transparent;
+    border-radius: 5px;
+    color: #dfe2da;
+    
+  }
+  tooltip.background {
+    background:	rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 0;
+  }
+  
+

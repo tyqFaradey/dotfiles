@@ -1,0 +1,98 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 12,
+    "spacing": 2,
+
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "margin-bottom": -6,
+
+    "exclusive": true,
+    "gtk-layer-shell": true,
+    "passthrough": false,
+    "fixed-center": true,
+    "modules-left": ["bluetooth" ,"tray","custom/sep", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": [
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "battery",
+      "clock",
+      "hyprland/language"
+    ],
+    "hyprland/workspaces": {
+      "on-click": "activate",
+      "format": "{id}",
+      "all-outputs": true,
+      "disable-scroll": false,
+      "active-only": false,
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "En",
+        "format-ru": "Ru"
+    },
+    "hyprland/window": {
+      "format": "{class}",
+    },
+    "tray": {
+      "show-passive-items": false,
+      "spacing": 6,
+
+    },
+    "clock": {
+      "format": "{:%a | %d %b | %H:%M}",
+      "tooltip-format": "<span color='#ccc2a2'><big>{calendar}</big></span>",
+      "calendar": {
+        "format": {
+          "weekdays": "<span><b>{}</b></span>",
+          "today":    "<span color='#dfe2da'><b>{}</b></span>"
+        }
+      }
+    },
+    "bluetooth": {
+      "format": "",
+      "on-click": "rfkill toggle bluetooth",
+      "on-click-right": "blueman-manager",
+      "tooltip": true,
+      "tooltip-format": "{}",
+      
+    },
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-plugged":  "{capacity}% ",
+      "format-charging": "{capacity}% ↑",
+      "format-not-charging": "",  
+      "format-icons": ["", // dying
+                        "", // 
+                        "", //
+                        "", //
+                        ""],//full
+    },
+    "cpu": {
+      "format": " {usage}%",
+      "tooltip": true,
+      "interval": 1,
+    },
+    "memory": {
+      "format": " {used:0.1f}G",
+      "tooltip": false,
+    },
+    "pulseaudio": {
+      "format": " {icon}{volume}%",
+      "format-muted": "  muted",
+      "format-icons": {
+        "default": [" ", " ", " "],
+      },
+      "on-click": "pavucontrol",
+      "on-click-right": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+    "tooltip": false
+    },
+    "custom/sep": {
+      "format": "|",
+      "tooltip": false,
+    },
+  }
