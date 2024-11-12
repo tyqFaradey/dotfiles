@@ -38,14 +38,12 @@ packages:
 
 ```shell
 vim /etc/default/grub
-
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ### 2.
 ```shell
 su
-
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
