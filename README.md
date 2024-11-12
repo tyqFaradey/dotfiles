@@ -38,12 +38,14 @@ packages:
 
 ```shell
 vim /etc/default/grub
+
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ### 2.
 ```shell
 su
+
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -70,6 +72,7 @@ makepkg -si
 ```
 ```shell
 yay -S hyprshot hyprpicker cava snapd
+yay -S visual-studio-code-bin
 ```
 
 ```shell
