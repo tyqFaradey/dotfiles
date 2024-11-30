@@ -6,7 +6,7 @@ My archlinux-hyprland dotfiles
 ```shell
 iwctl
 
-tation wlan0 connect SSID
+station wlan0 connect SSID
 
 ping google.com
 
