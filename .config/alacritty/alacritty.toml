@@ -1,0 +1,17 @@
+[general]
+import = [ "~/.cache/wal/colors-alacritty.toml" ]
+
+[font]
+normal = { family="JetBrains Mono",style="Bold" }
+
+[window]
+padding = { x=15, y=15 }
+
+opacity = 0.75
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+thickness = 0.15
+
+[terminal]
+osc52 = "CopyPaste"
