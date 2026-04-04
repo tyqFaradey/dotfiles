@@ -49,6 +49,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias c='clear'
 alias cd='z'
+alias i='yay -S '
 
 alias img="qimgv . & disown && hyprctl dispatch killactive"
 alias cat="bat --color=always --style=grid"
@@ -56,7 +57,5 @@ alias cat="bat --color=always --style=grid"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-
-export PATH="$HOME/.cargo/bin:$PATH"
 
 . "$HOME/.local/bin/env"

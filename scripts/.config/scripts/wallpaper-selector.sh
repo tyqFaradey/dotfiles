@@ -9,4 +9,8 @@ function select-wall() {
 TARGET_DIR="$HOME/.config/wallpapers"
 
 cd $TARGET_DIR
-swww img $(select-wall)
+SELECTED_WALL=$(select-wall)
+awww img $SELECTED_WALL
+wal -i $SELECTED_WALL -b "#000000"
+
+# hyprctl dispatch killactive

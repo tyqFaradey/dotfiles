@@ -1,0 +1,146 @@
+@import url("/home/dallix/.cache/wal/colors-waybar.css");
+
+@define-color background-main #000000;
+@define-color background-sub transparent;
+
+@define-color foreground #ffffff;
+
+* {
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 18px;
+  box-shadow: none;
+}
+
+window#waybar {
+  border-radius: 10px;
+
+  padding: 10px;
+
+  background-color: alpha(@background-main, 0.67);
+}
+
+.modules-left {
+  margin-top: 6px;
+
+  border: none;
+
+  background-color: @background-sub;
+}
+
+.modules-center {
+  border: none;
+
+  background-color: @ackground-sub;
+}
+
+.modules-right {
+  margin-bottom: 6px;
+
+  border: none;
+
+  background-color: @background-sub;
+}
+
+#clock,
+#network,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#battery {
+  color: @foreground;
+  padding: 0px 0px;
+  margin: 2px 6px;
+
+  border: 0px solid #ff0000;
+}
+
+#backlight {
+  font-weight: 100;
+}
+
+#workspaces {
+  padding: 0px 5px;
+  font-size: 32px;
+}
+#workspaces button {
+  all: unset;
+  padding: 0px 5px;
+  color: alpha(@color9, 0.4);
+  transition: all 0.2s ease;
+}
+#workspaces button:hover {
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+}
+#workspaces button.active {
+  color: @color9;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+#workspaces button.empty {
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+}
+#workspaces button.empty:hover {
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+}
+#workspaces button.empty.active {
+  color: @color9;
+  border: none;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+#network.disabled {
+  color: #e75e58;
+}
+#network.wifi {
+  color: #79b74c;
+}
+#network.ethernet {
+  color: #79b74c;
+}
+
+#bluetooth.disabled {
+  color: #e75e58;
+}
+#bluetooth.connected {
+  color: #79b74c;
+}
+
+#battery {
+  font-size: 15px;
+  font-weight: 700;
+
+  min-width: 2.5rem;
+
+  padding: 0px 0px;
+  margin: 4px 6px 0px 6px;
+
+  border-radius: 6;
+
+  color: #ffffff;
+  background-color: #79b74c;
+}
+
+#battery.plugged,
+#battery.charging {
+  background-color: #96938a;
+}
+#battery.critical {
+  background-color: #e75e58;
+}
+
+tooltip {
+  background: alpha(@background-main, 0.67);
+  border: none;
+}
+tooltip * {
+  color: @foreground;
+  margin: 2px;
+}
