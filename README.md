@@ -75,7 +75,7 @@ systemctl enable NetworkManager
 ```
 
 ```Bash
-pacman -S grub efibootmgr os-prober fuse3
+pacman -Syu grub efibootmgr os-prober fuse3
 ```
 
 edit `/etc/default/grub`
@@ -124,13 +124,14 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 sudo pacman -Syu sof-firmware alsa-firmware
 
-sudo pacman -S zed zip unzip chafa fzf zoxide zsh sass 
-
+sudo pacman -S bluez bluez-utils blueman
 sudo pacman -S hyprpicker hyprshot
 
-sudo pacman -S steam discord obsidian chromium drawio-desktop
+sudo pacman -S zed zip unzip chafa fzf zoxide zsh sass
 
-yay -S amneziavpn-bin qimgv zen-browser
+sudo pacman -S chromium telegram-desktop obsidian steam discord drawio-desktop
+
+yay -S amneziavpn-bin zen-browser qimgv
 
 gsettings set org.gnome.desktop.interface cursor-theme 'ИМЯ_ТЕМЫ'
 gsettings set org.gnome.desktop.interface cursor-size 24
