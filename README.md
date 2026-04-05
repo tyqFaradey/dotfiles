@@ -112,3 +112,10 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 pacman -S zed zip unzip quickshell chafa fzf zoxide zsh
 
 yay -S amneziavpn-bin qimgv zen-browser
+
+yay -S 
+
+gsettings set org.gnome.desktop.interface cursor-theme 'ИМЯ_ТЕМЫ'
+gsettings set org.gnome.desktop.interface cursor-size 24
+
+sudo cp -r ~/.icons/ИМЯ_ТЕМЫ /usr/share/icons/
