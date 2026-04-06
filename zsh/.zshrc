@@ -58,4 +58,4 @@ alias cat="bat --color=always --style=grid"
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 
-. "$HOME/.local/bin/env"
+
