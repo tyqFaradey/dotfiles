@@ -137,3 +137,11 @@ gsettings set org.gnome.desktop.interface cursor-theme 'ИМЯ_ТЕМЫ'
 gsettings set org.gnome.desktop.interface cursor-size 24
 
 sudo cp -r ~/.icons/ИМЯ_ТЕМЫ /usr/share/icons/
+
+```Bash
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
+```
+
+```Bash
+cd WhiteSur-gtk-theme && ./install.sh -d /usr/share/themes/ -c dark -t grey -l
+```
