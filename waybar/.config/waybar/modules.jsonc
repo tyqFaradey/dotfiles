@@ -86,4 +86,9 @@
     "format": "{capacity}",
     "tooltip": false,
   },
+
+  "hyprland/language": {
+    "format": "{shortDescription}",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+  },
 }

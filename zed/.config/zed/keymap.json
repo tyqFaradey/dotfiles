@@ -9,15 +9,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-b": "workspace::ToggleRightDock",
-
+      "ctrl-b": "project_panel::Toggle",
+      "ctrl-shift-b": ["workspace::ToggleLeftDock", "git_panel::ToggleFocus"],
     },
   },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-shift-b": "workspace::ToggleLeftDock",
-
-    },
-  }
 ]

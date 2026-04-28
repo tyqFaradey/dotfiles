@@ -1,20 +1,34 @@
 {
+  "ssh_connections": [
+    {
+      "host": "192.168.3.200",
+      "username": "dallix",
+      "args": [],
+      "projects": [],
+      "nickname": "Office"
+    },
+    {
+      "host": "office",
+      "args": [],
+      "projects": []
+    }
+  ],
   "lsp": {
     "vtsls": {
       "settings": {
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
+            "enabled": "always",
+          },
         },
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
-        }
+            "enabled": "always",
+          },
+        },
       },
-      "enable_lsp_tasks": true
-    }
+      "enable_lsp_tasks": true,
+    },
   },
   "restore_on_file_reopen": false,
   "close_on_file_delete": true,
@@ -27,20 +41,20 @@
 
   "languages": {
     "Python": {
-      "tab_size": 4
+      "tab_size": 4,
     },
     "CSS": {
-      "tab_size": 2
+      "tab_size": 2,
     },
     "SCSS": {
-      "tab_size": 2
+      "tab_size": 2,
     },
     "HTML": {
-      "tab_size": 2
+      "tab_size": 2,
     },
     "QML": {
-      "tab_size": 2
-    }
+      "tab_size": 2,
+    },
   },
 
   "theme": {
@@ -143,7 +157,6 @@
 
   "edit_predictions": {
     "mode": "subtle",
-    "enabled_in_text_threads": true,
   },
   "show_edit_predictions": true,
 
